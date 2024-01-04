@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Overview](README.md)
+* [PionerV1 Overview](README.md)
 * [🌊 Flow](flow.md)
 * [🌏 Smart Contracts](smart-contracts/README.md)
   * [📜 Contract Structure](smart-contracts/contract-structure.md)
