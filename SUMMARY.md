@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Flow](flow.md)
+* [🌊 Flow](flow.md)
 * [🌏 Smart Contracts](smart-contracts/README.md)
   * [📜 Contract Structure](smart-contracts/contract-structure.md)
   * [✅ Deposit and Withdraw](smart-contracts/deposit-and-withdraw.md)
