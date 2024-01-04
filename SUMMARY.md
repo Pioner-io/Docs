@@ -13,7 +13,8 @@
   * [🧙♂ Oracle](smart-contracts/oracle.md)
   * [🕵 Debt](smart-contracts/debt.md)
   * [🏭 StableCoin Factory](smart-contracts/stablecoin-factory.md)
-* [⚙ API](api.md)
+* [⚙ API](api/README.md)
+  * [Front-end Calls](api/front-end-calls.md)
 * [🦔 Hedging Bots](hedging-bots.md)
 * [🐸 Front Ends](front-ends.md)
 
