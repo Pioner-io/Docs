@@ -44,6 +44,8 @@ e
 
 ### 2/ Close market
 
+A normal market close is dangerous for the hedger, because&#x20;
+
 Close market happens in 2 times, first user call openCloseQuote
 
 ```solidity

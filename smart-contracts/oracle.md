@@ -1,8 +1,10 @@
 # 🧙♂ Oracle
 
+Oracle is used to secure each trade price, on open both traders agree on a price, no oracle is needed, but to close a position, both parties need to agree, and if that is not the case, an oracle should be able to be used to not lock of the trade if 1 party doesn't answer.
+
+Current Oracles is pyth.network but will evolve for better profitability for the hedger.
+
 Before each Close or Settle\&Liquidate price must be updated.
-
-
 
 ### Pyth Oracle :
 

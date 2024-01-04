@@ -10,6 +10,3 @@ The whole infrastructure divide into 4 parts :&#x20;
 
 
 
-Frontends host Exchanges in exchange of Fee Share.
-
-All Front End use Smart Contracts
