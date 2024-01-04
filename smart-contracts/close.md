@@ -4,11 +4,11 @@ description: PionerV1Close.sol
 
 # 📪 Close
 
-
+Closing a contract is where all attacks can happen on PionerV1, and crucial to be compatible by hedging bots profitability.
 
 ### `OpenCloseQuote`
 
-Open a close quote, allowing a user asking for close limit, stop limit or send a notification of close market.
+Open a close quote, allowing a user to ask for close limit, stop limit, or send a notification of close market.
 
 Allow in 1 click to close multiple bContract on the same asset but different bOracleId, for example in the case of a Close All button.
 
@@ -34,19 +34,29 @@ function openCloseQuote(
 {% endtab %}
 {% endtabs %}
 
-### There is multiple 3 ways of closing a positions :
+### 5 ways of closing positions:
 
-### 1/ Close limit
+### 1/ Close limit :&#x20;
 
-e
+After a close quote is triggered, the counterparty of the close quote initiate can call this function. This function can be called with a specific amount in the case where the counterparty is hedging on another market and his closing order hasn't been fully filled.
+
+bCloseQuoteId is the mapping ID of the close quote.
+
+index is the index limit id inside the closeQuote.
+
+```solidity
+acceptCloseQuote( uint256 bCloseQuoteId, uint256 index, uint256 amount ) public
+```
 
 
 
 ### 2/ Close market
 
-A normal market close is dangerous for the hedger, because&#x20;
+Close market to close at market price, this close option can only be called if the underlying party expiration parameters date is past. Before that date, only bi-parties limit close.
 
-Close market happens in 2 times, first user call openCloseQuote
+The close market happens in 2 times because a normal market close would be dangerous for the hedger because it can be triggered in low liquidity ph
+
+First user calls openCloseQuote, and then we let the time hedging bot react to place an order on the market, if the price for a sell is above the closeQuote price, then this means that the market has bounced on the hedger order.
 
 ```solidity
 function closeMarket(uint256 bCloseQuoteId, uint256 index) public
@@ -54,9 +64,11 @@ function closeMarket(uint256 bCloseQuoteId, uint256 index) public
 
 ### 3/ Stop limit
 
-e
+Same call as for the close limit but with a check to verify if the stop price is below or above the current Oracle price.
 
-
+```solidity
+acceptCloseQuote( uint256 bCloseQuoteId, uint256 index, uint256 amount ) public
+```
 
 ### 4/ Position Expiration
 
@@ -74,3 +86,18 @@ function expirateBContractOracleTimeout( uint256 bContractId) public
 
 ### 5/ Default&#x20;
 
+The case where one of the parties is margin called.
+
+Forward to [Settlements and Defaults](settlements-and-defaults.md)
+
+
+
+### Cancel CloseQuote :&#x20;
+
+Set the closeQuote state to Closed.
+
+```solidity
+function cancelCloseQuote(uint256 bCloseQuoteId)
+```
+
+After a cancelCloseQuote, the counterparty has a few blocks to react in case his closing hedge order has been partially filled or filled.

@@ -74,7 +74,7 @@ function deployBOracle(
 
 ### Accept Quote :
 
-Accept an open quote, lock collateral requirement an change the state of the contract from Quote -> Open
+Accept an open quote, lock collateral requirement an change the state of the contract from Quote -> Open.
 
 ```solidity
 function acceptQuote(
