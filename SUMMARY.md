@@ -23,5 +23,4 @@
 
 * [PionerV2](utils/pionerv2.md)
 * [Vocabulary](utils/vocabulary.md)
-* [Hedger Case Study](utils/hedger-case-study.md)
 * [Deployed Contracts](utils/deployed-contracts.md)

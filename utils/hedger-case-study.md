@@ -1,2 +1,0 @@
-# Hedger Case Study
-
