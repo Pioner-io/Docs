@@ -10,6 +10,10 @@ Each position state is represented as a Billateral Contract.
 
 Functions update the state of the bConctract struct.
 
+### bContract struct :&#x20;
+
+<table><thead><tr><th></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>pA</td><td>Party A - Long Party</td><td></td></tr><tr><td>pB</td><td>Party B - Short Party</td><td></td></tr><tr><td>oracleId</td><td>Id of bOracle set of rules</td><td></td></tr><tr><td>initiator</td><td>Used in the contract to define whom sent the quote.</td><td></td></tr><tr><td>price</td><td>Open price of the contract</td><td></td></tr><tr><td>qty</td><td>Number of contracts</td><td></td></tr><tr><td>interestRate</td><td>Yearly APR on Notional</td><td></td></tr></tbody></table>
+
 ```solidity
 struct bContract { 
         address pA; // partyA Long
@@ -29,7 +33,7 @@ struct bContract {
     }
 ```
 
-bOracle struct defines standardized contracts
+### bOracle struct :
 
 <table data-header-hidden><thead><tr><th></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td><pre><code>lastPrice
 </code></pre></td><td>Last Price Value</td><td></td></tr><tr><td><pre><code>lastPriceUpdateTime

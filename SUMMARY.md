@@ -10,5 +10,6 @@
 * [🧙♂ Oracle](oracle.md)
 * [🕵 Debt](debt.md)
 * [🏭 StableCoin Factory](stablecoin-factory.md)
+* [Vocabulary](vocabulary.md)
 * [Deployed Contracts](deployed-contracts.md)
 * [Hedger Case Study](hedger-case-study.md)
