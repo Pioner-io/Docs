@@ -12,26 +12,7 @@ Functions update the state of the bConctract struct.
 
 ### bContract struct :&#x20;
 
-<table><thead><tr><th></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>pA</td><td>Party A - Long Party</td><td></td></tr><tr><td>pB</td><td>Party B - Short Party</td><td></td></tr><tr><td>oracleId</td><td>Id of bOracle set of rules</td><td></td></tr><tr><td>initiator</td><td>Used in the contract to define whom sent the quote.</td><td></td></tr><tr><td>price</td><td>Open price of the contract</td><td></td></tr><tr><td>qty</td><td>Number of contracts</td><td></td></tr><tr><td>interestRate</td><td>Yearly APR on Notional</td><td></td></tr></tbody></table>
-
-```solidity
-struct bContract { 
-        address pA; // partyA Long
-        address pB; // partyB Short
-        uint256 oracleId; // bOracle struct mapping Id
-        address initiator; // quote party
-        uint256 price;
-        uint256 qty;
-        uint256 interestRate; 
-        bool isAPayingAPR; // party who pays interest rates
-        uint256 openTime;
-        cState state;
-        address frontEnd; // frontend affiliate
-        address hedger; // trading bot affiliate
-        address affiliate; // affiliate ( defined by a cookie on frontend )
-        uint256 cancelTime;
-    }
-```
+<table><thead><tr><th></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>pA</td><td>Party A - Long Party</td><td></td></tr><tr><td>pB</td><td>Party B - Short Party</td><td></td></tr><tr><td>oracleId</td><td>Id of bOracle set of rules</td><td></td></tr><tr><td>initiator</td><td>Used in the contract to define whom sent the quote.</td><td></td></tr><tr><td>price</td><td>Open price of the contract</td><td></td></tr><tr><td>qty</td><td>Number of contracts</td><td></td></tr><tr><td>interestRate</td><td>Yearly APR on Notional</td><td></td></tr><tr><td>isAPayingAPR</td><td>bool - Charging pA or pB paying interestRate</td><td></td></tr><tr><td>openTime</td><td>Time at last price update</td><td></td></tr><tr><td>cState</td><td>enum - Quote, Open, Closed, Liquidated</td><td></td></tr><tr><td>frontEnd</td><td>Share of Fees goes to the front end hosting the transaction.</td><td></td></tr><tr><td>affiliate</td><td>Frontend can keep that share to itself or distribute it with their own affiliate system</td><td></td></tr><tr><td>hedger</td><td>Hedging Bot Affiliate Address allowing a hedging bot provider to earn.</td><td></td></tr><tr><td>cancelTime</td><td>In case of cancel or default, give a few seconds for a hedger tx to pass. Hedger must be profitable before all.</td><td></td></tr></tbody></table>
 
 ### bOracle struct :
 
