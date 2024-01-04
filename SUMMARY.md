@@ -1,6 +1,7 @@
 # Table of contents
 
 * [PionerV1 Overview](README.md)
+* [🐝 The swarm](the-swarm.md)
 * [🌊 Flow](flow.md)
 * [🌏 Smart Contracts](smart-contracts/README.md)
   * [📜 Contract Structure](smart-contracts/contract-structure.md)
@@ -20,6 +21,7 @@
 
 ## Utils
 
+* [PionerV2](utils/pionerv2.md)
 * [Vocabulary](utils/vocabulary.md)
 * [Hedger Case Study](utils/hedger-case-study.md)
 * [Deployed Contracts](utils/deployed-contracts.md)
