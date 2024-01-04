@@ -8,6 +8,7 @@
   * [📬 Open](smart-contracts/open.md)
   * [📪 Close](smart-contracts/close.md)
   * [🔞 Settlements and Defaults](smart-contracts/settlements-and-defaults.md)
+  * [⚡ Flash Auctions](smart-contracts/flash-auctions.md)
   * [🧙♂ Oracle](smart-contracts/oracle.md)
   * [🕵 Debt](smart-contracts/debt.md)
   * [🏭 StableCoin Factory](smart-contracts/stablecoin-factory.md)
