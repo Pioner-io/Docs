@@ -2,7 +2,7 @@
 
 * [PionerV1 Overview](README.md)
 * [🐝 The swarm](the-swarm.md)
-* [🌊 Flow](flow.md)
+* [🌊 Flows](flows.md)
 * [🌏 Smart Contracts](smart-contracts/README.md)
   * [📜 Contract Structure](smart-contracts/contract-structure.md)
   * [✅ Deposit and Withdraw](smart-contracts/deposit-and-withdraw.md)
