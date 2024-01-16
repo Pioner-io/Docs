@@ -1,6 +1,8 @@
-# Front-end Calls
+---
+description: ( Coming soon ... )
+---
 
-Each second an RFQ based on the last input from the parameter input in the frontend is triggered. In response, the front end receives all the inputs to display or interact with the contracts in 1 click.
+# Front-end Calls
 
 {% swagger method="post" path="" baseUrl="https://api.pioner.io/get-account-data" summary="" %}
 {% swagger-description %}

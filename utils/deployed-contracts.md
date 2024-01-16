@@ -32,4 +32,4 @@ Mainnet
 
 ### Admin Controls <a href="#admin-controls" id="admin-controls"></a>
 
-Pioner are a novel mechanism that hasn't existed anywhere before. All novel mechanisms contain the risk of unexpected / unwanted logic executions. Although we
+Pioner are a novel mechanism that hasn't existed anywhere before. All novel mechanisms contain the risk of unexpected/unwanted logic executions.
