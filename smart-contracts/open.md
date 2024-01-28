@@ -25,6 +25,8 @@ function openQuote(
 
 
 
+<table data-header-hidden><thead><tr><th></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>isLong</td><td>true : Long, false : Short</td><td></td></tr><tr><td>bOracleId</td><td>mapping Id of bOracle struct</td><td></td></tr><tr><td>price</td><td>open price</td><td></td></tr><tr><td>qty</td><td>number of contracts</td><td></td></tr><tr><td>interestRate</td><td>yearly interest rate</td><td></td></tr><tr><td>isAPayingAPR</td><td>true: Long side pays IR, false: Sort side pays IR</td><td></td></tr><tr><td>frontend</td><td>frontend affiliate address for fee share</td><td></td></tr><tr><td>affiliate</td><td>frontend affiliate, affiliate address for fee share</td><td></td></tr></tbody></table>
+
 ### Deploy bOracle and bContract at once :
 
 To facilitate cases where contracts are not standardized, for example in pair trading, the quote more open also deploys a bOracle struct with suited parameters.
