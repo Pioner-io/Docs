@@ -21,6 +21,7 @@
 
 ## Utils
 
+* [Tokenomics](utils/tokenomics.md)
 * [PionerV2](utils/pionerv2.md)
 * [Vocabulary](utils/vocabulary.md)
 * [Deployed Contracts](utils/deployed-contracts.md)
